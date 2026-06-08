@@ -21,6 +21,9 @@ def install(app: FastAPI):
     from .wechat import api
     from . import fixtures
     from .media import api
+    
+    # 账务管理模块
+    from .accounting import api as accounting_api
 
     app.include_router(router)
 
